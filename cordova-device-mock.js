@@ -48,7 +48,7 @@ var device = device || (function () {
             hash = ((hash<<5)-hash)+character;
             hash = hash & hash; // Convert to 32bit integer
         }
-        return hash;
+        return btoa(hash);
     }
     
     
