@@ -11,7 +11,7 @@ var device = device || (function () {
     
     _device.version = getVersion();
     
-    _device.manufacturer = navigator.vendor || "Google";
+    _device.manufacturer = navigator.vendor || "Google Inc.";
     
     _device.isVirtual = false;
     
@@ -20,7 +20,7 @@ var device = device || (function () {
     function getVersion() {
         var version = navigator.appVersion || '1.0';
         if(typeof version === 'string') {
-            version = version.match(/\d+[.]*\d*/)[0]
+            version = version.match(/\d+[.]*\d*/)[0];
         }
         return version;
     }
